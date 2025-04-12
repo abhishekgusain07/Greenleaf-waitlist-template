@@ -61,8 +61,8 @@ export default function Home() {
           return; // Exit the promise early if mail sending fails
         }
 
-        // If email sending is successful, proceed to insert into Notion
-        const notionResponse = await fetch("/api/notion", {
+        // Add to PostgreSQL waitlist instead of Notion
+        const waitlistResponse = await fetch("/api/waitlist", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -70,11 +70,13 @@ export default function Home() {
           body: JSON.stringify({ name, email }),
         });
 
-        if (!notionResponse.ok) {
-          if (notionResponse.status === 429) {
+        if (!waitlistResponse.ok) {
+          if (waitlistResponse.status === 429) {
             reject("Rate limited");
+          } else if (waitlistResponse.status === 409) {
+            reject("Already on waitlist");
           } else {
-            reject("Notion insertion failed");
+            reject("Database error");
           }
         } else {
           resolve({ name });
@@ -96,8 +98,10 @@ export default function Home() {
           return "You're doing that too much. Please try again later";
         } else if (error === "Email sending failed") {
           return "Failed to send email. Please try again 😢.";
-        } else if (error === "Notion insertion failed") {
+        } else if (error === "Database error") {
           return "Failed to save your details. Please try again 😢.";
+        } else if (error === "Already on waitlist") {
+          return "This email is already on our waitlist 😊";
         }
         return "An error occurred. Please try again 😢.";
       },
