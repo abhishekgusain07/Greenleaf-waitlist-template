@@ -21,7 +21,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://nextjs-notion-waitlist.vercel.app/waitlist-logo.png`}
+          src={`https://perfectwaitlist.vercel.app/greenleaf.png`}
           width="220"
           height="100"
           alt="Waitlist Logo"
