@@ -17,21 +17,16 @@ This is a template repository for creating a waitlist using Next.js 14, Notion a
 
 The UI is built using a mix of shadcn/ui, Magic UI and Tailwind CSS.
 
-**Demo:** [https://nextjs-notion-waitlist.vercel.app](https://nextjs-notion-waitlist.vercel.app)
+**Demo:** [https://perfectwaitlist.vercel.app](https://nextjs-notion-waitlist.vercel.app)
 
-**Sample Database** ([Link](https://lakshaybhushan.notion.site/15e45b25609e80408f83ebb97b45882b?v=c949c24dff4a42b3baa31bfb3e8a3354))
-<a href="https://lakshaybhushan.notion.site/15e45b25609e80408f83ebb97b45882b?v=c949c24dff4a42b3baa31bfb3e8a3354" target="_blank" rel="noopener noreferrer">
- <img src ="./public/sample-db.png">
-</a>
-
-## Features
 
 - **Next.js 14**: The most popular React framework.
-- **Notion as a CMS**: Use Notion to manage your waitlist users.
+- **Neon as database**: Use neon to store your waitlist users.
 - **Upstash Redis**: Use Upstash Redis to rate limit the number of signups in a given time period.
 - **Resend**: Use Resend to send emails to users who sign up.
 - **Vercel**: Deploy the app to Vercel with a single click.
 - **shadcn/ui**: Use shadcn/ui for building the UI components.
+
 
 ## Why Notion?
 

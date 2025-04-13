@@ -12,11 +12,11 @@ export default function Footer() {
       <motion.div variants={itemVariants}>
         Brought to you by{" "}
         <Link
-          href="https://lakshb.dev"
+          href="https://ag-tau-liart.vercel.app"
           rel="noopener noreferrer"
           target="_blank">
           <span className="text-zinc-300 underline underline-offset-2 transition-all duration-200 ease-linear hover:text-yellow-200">
-            lakshaybhushan
+            Abhishek Gusain
           </span>
           .
         </Link>

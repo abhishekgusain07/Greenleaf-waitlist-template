@@ -6,7 +6,7 @@ import TextBlur from "./ui/text-blur";
 
 const logos = [
   { href: "https://nextjs.org", src: "/nextjs.svg", alt: "Next.js Logo" },
-  { href: "https://notion.so", src: "/notion.svg", alt: "Notion Logo" },
+  { href: "https://neon.tech", src: "/neon.svg", alt: "Neon Logo" },
   { href: "https://resend.com", src: "/resend.svg", alt: "Resend Logo" },
   { href: "https://upstash.com", src: "/upstash.svg", alt: "Upstash Logo" },
   { href: "https://ui.shadcn.com", src: "/shadcn.svg", alt: "shadcn Logo" },
