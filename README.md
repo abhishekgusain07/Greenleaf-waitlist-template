@@ -12,7 +12,7 @@
 
 </p>
 
-![GithubBanner](./app/opengraph-image.png)
+![GithubBanner](./app/greenleaf.png)
 
 This is a template repository for creating a waitlist using Next.js 14, Neon PostgreSQL for data storage, Drizzle ORM for database operations, Upstash Redis for rate limiting, and Resend for sending emails with a custom domain.
 
