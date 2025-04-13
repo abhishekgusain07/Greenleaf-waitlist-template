@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
-import { ArrowRight, Check, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Sparkles, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -118,9 +118,10 @@ export default function Home() {
           href="https://github.com/abhishekgusain07/Greenleaf-waitlist-template" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="rounded-full px-4 py-2 text-sm text-zinc-400 transition-colors hover:bg-zinc-800/60 hover:text-white"
+          className="flex h-10 w-10 items-center justify-center rounded-full text-zinc-400 transition-colors hover:bg-zinc-800/60 hover:text-white"
+          aria-label="GitHub Repository"
         >
-          GitHub
+          <Github size={20} />
         </a>
       </header>
 
