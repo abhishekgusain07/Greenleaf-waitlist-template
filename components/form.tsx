@@ -62,7 +62,7 @@ export default function Form({
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
         <p>For any queries, reach out at </p>
         <Link
-          href="https://x.com/AgBuilds"
+          href="https://x.com/AgusainBuilds"
           rel="noopener noreferrer"
           target="_blank">
           <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-yellow-200" />
