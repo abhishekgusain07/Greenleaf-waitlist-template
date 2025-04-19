@@ -31,7 +31,7 @@ export default function RootLayout({
         property="og:url"
         content="https://perfectwaitlist.vercel.app/"
       />
-      <meta name="twitter:image" content="/twitter-image.png" />
+      <meta name="twitter:image" content="/greenleaf.png" />
       <meta name="twitter:image:type" content="image/png" />
       <meta name="twitter:image:width" content="1280" />
       <meta name="twitter:image:height" content="832" />
